@@ -9,7 +9,7 @@ public class UTFtoBytesConverter {
         byte[] bytes = readFileBytes(file);
         try (FileOutputStream fos = new FileOutputStream(outputFile)) {
             for (int i = 0; i < bytes.length; i++) {
-                fos.write(String.valueOf(bytes[i] + " ").getBytes());
+                fos.write((bytes[i] + " ").getBytes());
             }
         } catch (IOException e) {
             e.printStackTrace();
