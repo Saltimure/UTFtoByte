@@ -3,7 +3,7 @@ package com.company;
 import java.io.*;
 import java.util.Scanner;
 
-public class UTFtoBytesConverter {
+public class UTFtoBytesConverter{
 
     public static void stringToBytes(File file, File outputFile) {
         byte[] bytes = readFileBytes(file);
